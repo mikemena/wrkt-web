@@ -1,0 +1,191 @@
+.program {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+
+  box-sizing: border-box;
+}
+
+.program__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.program__expand-btn {
+  flex: 0 0 auto;
+}
+
+.program__title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.pencil-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.program__form {
+  display: flex;
+  flex-direction: column;
+}
+.program.light {
+  background-color: rgb(204, 204, 202);
+  box-shadow: rgba(72, 73, 74, 0.2) 0px 8px 24px;
+}
+.program.dark {
+  background-color: rgb(50, 49, 54);
+  box-shadow: rgba(184, 186, 187, 0.2) 0px 8px 24px;
+}
+
+.program__section {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.program__section-title {
+  flex-shrink: 0;
+}
+.input-select-container {
+  display: flex;
+  align-items: center;
+}
+.programDuration {
+  margin-right: 10px;
+}
+
+.durationUnit {
+  margin-left: 10px;
+}
+
+.daysPerWeek {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+/* Light theme specific styles */
+.program__section-title.light,
+.program__expand-btn.light,
+.program__title.light,
+.program__icon.light {
+  color: var(--dark-text-color);
+}
+
+/* Dark theme specific styles */
+.program__section-title.dark,
+.program__expand-btn.dark,
+.program__title.dark,
+.program__icon.dark {
+  color: var(--light-text-color);
+}
+
+.program__section-title,
+.program__section-text {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.program__btn-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.program-name-input {
+  height: 60px;
+  resize: none;
+}
+
+.program-name-input.light,
+.programDuration.light,
+.daysPerWeek.light,
+.durationUnit.light,
+.mainGoal.light {
+  background-color: var(--light-input);
+}
+.program-name-input.dark,
+.programDuration.dark,
+.daysPerWeek.dark,
+.durationUnit.dark,
+.mainGoal.dark {
+  background-color: var(--dark-input);
+}
+
+.program__expand-btn {
+  top: 5px;
+  left: 0;
+  margin-left: 10px;
+}
+/* Adjust form styling for smaller screens */
+
+@media (max-width: 768px) {
+  .program {
+    padding: 5px;
+  }
+
+  .program__header {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+  }
+
+  .program__expand-btn {
+    padding: 5px;
+  }
+  .program__icon {
+    margin-left: 2px;
+  }
+  .program__title {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .program__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .program__section-title {
+    width: auto;
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
+  .program-name-input,
+  .mainGoal,
+  .programDuration,
+  .durationUnit,
+  .daysPerWeek {
+    width: 100%;
+    margin: 2px;
+  }
+
+  .input-select-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .programDuration {
+    margin-right: 5px;
+  }
+
+  .durationUnit {
+    margin-left: 5px;
+  }
+
+  .daysPerWeek {
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  .mainGoal,
+  .durationUnit {
+    height: 40px;
+  }
+}

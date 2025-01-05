@@ -1,0 +1,235 @@
+.view-prog-page__program {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.view-prog-page__page-title-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+.view-prog-page__page-title {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  font-weight: 400;
+  color: var(--gray);
+  margin: 0 20px;
+}
+
+.view-prog-page__title-link {
+  text-decoration: none;
+  color: var(--orange);
+  font-size: 1.2rem;
+}
+
+.view-prog-page__program.light,
+.view-prog-page__search-container.light {
+  background-color: rgb(204, 204, 202);
+  box-shadow: rgba(72, 73, 74, 0.2) 0px 8px 24px;
+}
+.view-prog-page__program.dark,
+.view-prog-page__search-container.dark {
+  background-color: rgb(50, 49, 54);
+  box-shadow: rgba(184, 186, 187, 0.2) 0px 8px 24px;
+}
+/* Light theme specific styles */
+.view-prog-page__search-filer-text.light,
+.view-prog-page__remove-program-btn.light,
+.view-prog-page__no-programs.light {
+  color: var(--dark-text-color);
+}
+
+/* Dark theme specific styles */
+.view-prog-page__search-filer-text.dark,
+.view-prog-page__remove-program-btn.dark,
+.view-prog-page__no-programs.dark {
+  color: var(--light-text-color);
+}
+
+.program-search__search-text-input.light,
+.program-search__goals.light,
+.program-search__duration-unit.light {
+  background-color: var(--light-input);
+  color: var(--dark-text-color);
+}
+
+.program-search__goals.dark,
+.program-search__duration-unit.dark {
+  background-color: var(--dark-input);
+  color: var(--light-text-color);
+}
+
+.view-prog-page__program-title {
+  color: var(--orange);
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.view-prog-page__program-details {
+  display: flex;
+  margin: 5px 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.view-prog-page__program-details-section {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.view-prog-page__program-details-label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 5px;
+  color: var(--gray);
+}
+.view-prog-page__program-details-value {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 5px;
+  color: var(--dark-green);
+}
+
+/* Search Filter Styles */
+
+.view-prog-page__search-container {
+  max-width: 750px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+}
+
+.view-prog-page__search-expand-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.view-prog-page__search-expand-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.view-prog-page__search-filer-text {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.view-prog-page__search-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-prog-page__search-input-top-row {
+  flex: 1 0 100%;
+  padding: 5px;
+  display: flex;
+}
+
+.view-prog-page__search-input-bottom-row {
+  flex: 1 0 100%;
+  padding: 5px;
+  display: flex;
+}
+
+.program-search__search-text-input,
+.program-search__goals {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.program-search__duration,
+.program-search__duration-unit,
+.program-search__days-per-week {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.view-prog-page__remove-program-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+}
+
+.view-prog-page__no-programs {
+  text-align: center;
+  margin: 20px;
+}
+
+.view-prog-page__link {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .view-prog-page__program {
+    max-width: 100%;
+    padding: 5px;
+    margin: 10px auto;
+  }
+  .view-prog-page__page-title-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+  }
+
+  .view-prog-page__page-title {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .view-prog-page__title-link {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.1rem;
+  }
+
+  .view-prog-page__program-title {
+    margin: 5px 25px;
+    font-size: 1.2rem;
+  }
+  .view-prog-page__program-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-prog-page__program-details-section {
+    display: flex;
+    padding: 5px 10px;
+    width: 70%;
+  }
+
+  .view-prog-page__program-details-label {
+    margin-right: 10px;
+    white-space: nowrap;
+    flex: 1;
+  }
+
+  .view-prog-page__program-details-value {
+    text-align: right;
+    flex: 1;
+    text-align: left;
+  }
+  .view-prog-page__search-container,
+  .view-prog-page__search-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,190 @@
+:root {
+  --dark-text-color: rgb(83, 84, 82);
+  --light-text-color: rgb(151, 148, 154);
+  --dark-background: rgb(38, 38, 42);
+  --light-background: rgb(219, 215, 213);
+  --dark-input: rgb(38, 38, 42);
+  --light-input: rgb(219, 215, 213);
+  --orange: rgb(249, 156, 87);
+  --pink: rgb(122, 18, 98);
+  --green: hsl(128, 70%, 59%);
+  --dark-green: #5e8063;
+  --white: rgb(220, 218, 218);
+  --black: rgb(59, 59, 59);
+  --gray: rgb(115, 115, 113);
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Light theme specific styles */
+html.light {
+  background-color: var(--light-background);
+}
+
+/* Dark theme specific styles */
+html.dark {
+  background-color: var(--dark-background);
+}
+
+/* Reset form elements */
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid var(--orange);
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+button {
+  /* padding: 0.6em 1.2em; */
+  height: 40px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--dark-card-color);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+
+input.light,
+select.light,
+textarea.light {
+  color: var(--dark-text-color);
+}
+
+input.dark,
+select.dark,
+textarea.dark {
+  color: var(--light-text-color);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('./assets/images/caret-down-sharp.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  border-style: none;
+  background-color: var(--primary-color);
+}
+
+/* For Internet Explorer */
+select::-ms-expand {
+  display: none;
+}
+
+input::placeholder {
+  /* font-size: 16px; */
+  color: var(--dark-text-color);
+  opacity: 1;
+}
+
+.page-layout {
+  padding: 35px;
+  margin: 35px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark-text-color);
+}
+
+.page-subtitle {
+  color: var(--light-text-color);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  margin: 0;
+  font-weight: normal;
+}
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,274 @@
+.prog-details-page__header {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.prog-details-page__title-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.prog-details-page__back-icon {
+  margin-right: 2px;
+  font-size: 24px;
+  color: var(--gray);
+}
+
+.prog-details-page__back-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.prog-details-page__program {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: var(--gray);
+}
+
+.prog-details-page__program.light,
+.prog-details-page__workout-container.light {
+  background-color: rgb(204, 204, 202);
+  box-shadow: rgba(72, 73, 74, 0.2) 0px 8px 24px;
+}
+.prog-details-page__program.dark,
+.prog-details-page__workout-container.dark {
+  background-color: rgb(50, 49, 54);
+  box-shadow: rgba(184, 186, 187, 0.2) 0px 8px 24px;
+}
+
+/* Light theme specific styles */
+.prog-details-page__workout-name.light {
+  color: var(--dark-green);
+}
+
+/* Dark theme specific styles */
+.prog-details-page__workout-name.dark {
+  color: var(--light-text-color);
+}
+
+/* styles for program header section */
+
+.prog-details-page__program-title {
+  color: var(--orange);
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.prog-details-page__program-details {
+  display: flex;
+  margin: 5px 0;
+
+  width: 100%;
+}
+
+.prog-details-page__program-details-section {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.prog-details-page__program-details-label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 15px;
+  color: var(--gray);
+}
+.prog-details-page__program-details-value {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 5px;
+  color: var(--dark-green);
+}
+
+.prog-details-page__button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* styles for workout section */
+
+.prog-details-page__workout-expand-container {
+  display: flex;
+  align-items: center;
+}
+
+.prog-details-page__workout-container {
+  max-width: 750px;
+  margin: 10px auto 20px;
+  padding: 10px 0;
+}
+
+.prog-details-page__workout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.prog-details-page__workout-summary {
+  flex: 1; /* Take up remaining space */
+  text-align: center; /* Center text within the summary div */
+}
+
+.prog-details-page__workout-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.prog-details-page__exercise-count {
+  font-size: 16px;
+  color: gray;
+}
+
+.prog-details-page__workout-expand-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.prog-details-page__workout-filer-text {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.prog-details-page__exercise-count {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--gray);
+}
+
+/* styles for exercises */
+
+.prog-details-page__exercise-container {
+  padding: 0;
+}
+
+.prog-details-page__exercise-wrapper {
+  margin-top: 20px;
+
+  border-top: 1px solid #dedede;
+  padding: 10px 0;
+}
+
+.prog-details-page__exercise-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.prog-details-page__exercise-order {
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+  margin: 0 10px;
+}
+.prog-details-page__exercise-info {
+  flex: 1;
+}
+
+.prog-details-page__exercise-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--black);
+  margin: 0;
+}
+
+.prog-details-page__exercise-details {
+  margin-top: 5px;
+}
+
+.prog-details-page__exercise-muscle,
+.prog-details-page__exercise-equipment {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--gray);
+  padding-bottom: 5px;
+}
+
+.prog-details-page__exercise-sets {
+  margin-top: 10px;
+}
+
+.prog-details-page__set-header,
+.prog-details-page__set-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.prog-details-page__set-header {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--gray);
+}
+
+.prog-details-page__set-row {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.prog-details-page__set-row span {
+  color: #333;
+}
+
+/* styles for buttons */
+
+.prog-details-page__button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px;
+}
+
+.prog-details-page__button-container button {
+  margin: 0 10px;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .prog-details-page__program {
+    max-width: 100%;
+    padding: 5px;
+    margin: 10px auto;
+  }
+
+  .prog-details-page__title-link {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.1rem;
+  }
+
+  .prog-details-page__program-title {
+    margin: 5px 25px;
+    font-size: 1.2rem;
+  }
+  .prog-details-page__program-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prog-details-page__program-details-section {
+    display: flex;
+    padding: 5px 10px;
+    width: 70%;
+  }
+}
